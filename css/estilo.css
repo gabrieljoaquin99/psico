@@ -109,6 +109,14 @@ footer a:hover {
     padding: 100px 5px 100px;
 }
 
+/* Desativa o 'fixed' no Safari iOS */
+@supports (-webkit-touch-callout: none) {
+    .bg-tur-dep {
+        background-attachment: scroll !important;
+    }
+}
+
+
 .swiper {
     padding-bottom: 40px;
     color: #26422d;
